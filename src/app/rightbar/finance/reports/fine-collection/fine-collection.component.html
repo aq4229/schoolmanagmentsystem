@@ -1,0 +1,129 @@
+<section class="py-4">
+    <div class="container-fluid">
+        <h5>Fine Collection</h5>
+        <div class="container-fluid shadow bg-white">
+            <form action="">
+
+
+
+                <div class="align-items-center  py-3 row">
+                    <div class="col-12">
+                        <div class="form-group">
+                            <h6> <strong>   Report Type </strong></h6>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="form-check form-check-inline col-12 py-2">
+                                        <label class="form-check-label cursor-pointer">
+                      <input class="form-check-input" type="radio" value="section" (click)="tab1('section')" name="abc"  id="section" value="checkedValue"> Fine
+                      Collection By Section Class
+                    </label>
+                                    </div>
+                                    <div class="form-check form-check-inline col-12">
+                                        <label class="form-check-label cursor-pointer">
+                      <input class="form-check-input" value="student" type="radio" (click)="tab1('student')" name="abc" id="student" value="checkedValue"> Fine
+                      Collection By Student
+                    </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="row align-items-center" *ngIf="tabval">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <label for="">From</label>
+                                <input type="date" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <label for="">To</label>
+                                <input type="date" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-12">
+                            <div class="form-group">
+                                <label for="">Section Status</label>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="abc" id="" value="checkedValue"> All
+                    </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="abc" id="" value="checkedValue"> Active
+                    </label>
+                                        </div>
+
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="abc" id="" value="checkedValue"> In Active
+                    </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-12 col-md-3">
+                            <div class="form-group">
+                                <label for="">Schools</label>
+                                <select name="" id="" class="form-control">
+                <option value="" disabled selected>Select School</option>
+                <option value="">Garrison Academy Walton Cantt</option>
+              </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12 col-md-6">
+                            <div class="form-group">
+                                <label for="">Class Section</label>
+                                <select name="" id="" class="form-control">
+                <option value="" disabled selected>Select All</option>
+                <option value="">Garrison Academy Walton Cantt</option>
+              </select>
+                            </div>
+                        </div>
+                        <div class="align-items-center col-12 col-lg-3 col-md-3 row">
+                            <button type="button" class="btn btn-primary">Show Report</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- <div>
+                    <div class="row align-items-center">
+                        <div class="col-lg-2 col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <label for="">From</label>
+                                <input type="date" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <label for="">To</label>
+                                <input type="date" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-12">
+                            <div class="form-group">
+                                <label for="">Students</label>
+                                <option value="" class="form-control">
+                                    <li disabled selected>Select Student</li>
+                                </option>
+                            </div>
+                        </div>
+                        <div class="align-items-center col-6 col-lg-2 col-md-2 row">
+                            <button type="button" class="btn btn-primary">Show Report</button>
+                        </div>
+                    </div>
+                </div> -->
+            </form>
+        </div>
+    </div>
+</section>

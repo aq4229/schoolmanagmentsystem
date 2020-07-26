@@ -1,0 +1,209 @@
+// .dropmenu[aria-expanded="true"]>a:after,
+// .dropmenu[aria-expanded="true"]>li>a:after {
+//     content: '\002D';
+//     position: absolute;
+//     right: 16px;
+//     font-size: 22px;
+//     width: 9.6px;
+//     height: 11px;
+// }
+// .dropmenu[aria-expanded="false"]>a:after,
+// .dropmenu[aria-expanded="false"]>li>a:after {
+//     content: '\002B';
+//     position: absolute;
+//     right: 16px;
+//     font-size: 22px;
+//     width: 9.6px;
+//     height: 11px;
+// }
+li.active {
+    background-color: #fbf6f61c;
+}
+
+li.active+a {
+    color: white;
+}
+
+.sidebar-left {
+    background-color: #282828;
+    color: #949494;
+    display: block;
+    li {
+        position: relative;
+    }
+    .ptb {
+        padding: 8px 0 8px 30px;
+    }
+    .main-menu li ul {
+        display: block;
+        list-style-type: none;
+    }
+    .main-menu>li {
+        width: 100%;
+        position: relative;
+        display: block;
+        a {
+            padding: 10px 15px;
+            display: block;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 100;
+            color: #949494;
+            transition: all 0.2s ease-in;
+            &:hover {
+                color: white;
+                display: block;
+                cursor: pointer;
+            }
+        }
+    }
+    .sidevar-nav ul li ul {
+        display: block;
+        list-style-type: none;
+    }
+    .innermenusub {
+        padding-left: 15px;
+    }
+    .dropmenu:hover {
+        cursor: pointer;
+        background-color: #202020;
+    }
+    .mr-10 {
+        margin-right: 10px;
+    }
+    .mr-15 {
+        margin-right: 15px;
+    }
+    .sidebar-nav .main-menu li ul.innermenu {
+        padding: 0px;
+        li>a {
+            padding: 8px 15px 8px 30px;
+            display: block;
+            font-size: 11px;
+        }
+        .ml-4 {
+            margin-left: 4px;
+        }
+    }
+}
+
+.columnleft {
+    /*visibility: hidden;*/
+    width: 250px;
+    overflow-y: scroll;
+    position: fixed;
+    z-index: 999999;
+    left: 0;
+    bottom: 0;
+    top: 45px;
+    background-color: #282828;
+    /* width */
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: #282828;
+    }
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    @media screen and (max-width: 993px) {
+        width: 80px;
+        position: fixed;
+        overflow: visible;
+        z-index: 999999;
+        left: 0;
+        bottom: 0;
+        top: 45px;
+        background-color: #282828;
+        .dropmenu {
+            position: relative;
+            a {
+                transition: all 0.5s ease-in;
+                text-align: center;
+                font-size: 10px !important;
+                padding: 11px 0px !important;
+            }
+            i,
+            a>svg:first-child {
+                font-size: 5vh;
+                display: block;
+                text-align: center;
+                margin: 0;
+                margin: auto;
+            }
+            i.plusminus,
+            .svg-inline--fa.fa-w-14 {
+                display: none;
+            }
+        }
+        ul.innermenu {
+            width: 220px;
+            background: #282828;
+            position: absolute;
+            z-index: 999999999;
+            left: 80px;
+            top: 0;
+            overflow: visible !important;
+            transition: all 1s ease-in;
+            li>a {
+                padding: 0px;
+            }
+        }
+        ul li:hover>ul,
+        ul li ul:hover,
+        .dropmenu:hover+ul.innermenu,
+        ul.innermenu:hover .innermenu {
+            display: block !important;
+        }
+        .innermenusub {
+            display: none;
+            width: 220px;
+            background: #282828;
+            position: absolute;
+            z-index: 999999999;
+            left: 220px;
+            top: 0;
+            padding: 0px;
+            overflow: visible !important;
+            transition: all 1s ease-in;
+        }
+        ul li:hover>ul,
+        ul li ul:hover,
+        a.innermenu-item:hover+.innermenusub {
+            display: block !important;
+        }
+    }
+    @media screen and (min-width:1200px) {
+        .container-fluid-full {
+            overflow: hidden;
+            position: relative;
+            height: 100%
+        }
+        #content {
+            width: 85.578%;
+            padding: 28px;
+            margin: 0px 0px;
+            margin-left: 14.422% !important;
+        }
+        .columnleft {
+            background: #3A3A3A;
+            margin-left: 0px !important;
+            position: absolute;
+            height: 100%;
+        }
+        .sidebar-nav>ul {
+            margin: 0px;
+        }
+        footer {
+            margin: 0px 0px 0px 0px;
+            padding: 10px 20px;
+        }
+    }
+}

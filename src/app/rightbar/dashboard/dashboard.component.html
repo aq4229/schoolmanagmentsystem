@@ -1,0 +1,301 @@
+<div class=" columnright">
+    <div class="jumbotron1 p-0">
+
+        <div class="studentdata mt-4">
+            <div class="col-md-12">
+                <div class="row">
+
+                    <div class="col-sm-12 col-md-6 mt-4">
+                        <div class="card bg-greensea flex-row">
+                            <div class="card-image">
+                                <i class="fa fa-user fa-4x"></i>
+                            </div>
+                            <div class="card-content">
+                                <p class="m-0 text-elg text-strong mb-0">20241</p>
+                                <p class="m-0">Total Student</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 mt-4 ">
+                        <div class="card flex-row bg-lightred">
+
+
+                            <div class="card-image">
+                                <i class="fa fa-smile fa-4x"></i>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="m-0 text-elg text-strong">0</h2>
+                                <p class="m-0"> Total Present</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 mt-4">
+                        <div class="card flex-row bg-bluee">
+
+                            <div class="card-image">
+                                <i class="fa fa-frown-o fa-4x"></i>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="m-0 text-elg text-strong">0</h2>
+                                <p class="m-0">Total Absent</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 mt-4">
+                        <div class="card flex-row bg-slategray">
+
+                            <div class="card-image">
+                                <i class="fa fa-briefcase fa-4x"></i>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="m-0 text-elg text-strong">15,876,938</h2>
+                                <p class="m-0">Total Fee collected</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12">
+
+
+            <div class="row">
+                <div class="col-md-8 mt-4">
+                    <div class="title">
+                        <div class="title-header container-fluid">
+                            <h4 class="d-inline-block m-0 py-3 ">
+                                <strong>Students</strong> Per Class</h4>
+                            <i style="
+        padding-right: 19px;
+        line-height: 57px;
+        border-left: 1px solid rgba(0,0,0,.1);;
+        padding-left: 19px;" class=" icon-cog float-right">
+        </i>
+                        </div>
+                        <div class="title-body">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 calander  mt-4">
+                    <section class="bg-slategray card pb-5  widget-calendar" fullscreen="isFullscreen05">
+                        <!-- tile header -->
+                        <div class="card-header1 dvd dvd-btm container ">
+                            <h1 class="custom-font d-lg-inline-block" style="font-size: 18px">
+                                <strong>Mini </strong>Calendar</h1>
+                            <ul class="controls d-lg-inline-block float-right list-unstyled m-0">
+                                <li class="dropdown" dropdown="">
+                                    <a href="" class=" settings" aria-haspopup="true" aria-expanded="false"><i  style=" line-height: 56px;    border-left: 1px solid white;padding-left: 15px;" class="text-white fa fa-cog"></i></a>
+                                    <ul class="dropdown-menu pull-right with-arrow animated littleFadeInUp">
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <hr class="bg-white mt-0">
+
+
+
+                    </section>
+                </div>
+                <section class="fee-collection   col-md-12">
+                    <div class="row">
+
+                        <div class="col-sm-12 mt-4">
+
+
+                            <div class="card title">
+                                <div class=" ">
+                                    <h2 class="custom-font"><strong>Fee</strong> Collection</h2>
+                                    <i style="
+            padding-right: 19px;
+            line-height: 57px;
+            border-left: 1px solid rgba(0,0,0,.1);
+            padding-left: 19px;
+            " class=" icon-cog float-right"></i>
+                                    <hr>
+                                </div>
+                                <div class="card-body1">
+                                    <canvas id="bar-chart-grouped" style="height:40vh; width:80vw"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- fee collection -->
+                <section class="   col-md-12">
+                    <div class="">
+                        <div class="row">
+                            <div class="finance  col-md-6 col-sm-12  mt-4">
+                                <div class="">
+                                    <div class="card height337 title">
+                                        <div class="card-header1 ">
+                                            <h2 class="custom-font"><strong>Finance</strong> (Income & Expense)</h2>
+                                            <i style="
+                  padding-right: 19px;
+                  line-height: 57px;
+                  border-left: 1px solid rgba(0,0,0,.1);;
+                  padding-left: 19px;
+                  " class=" icon-cog float-right"></i>
+                                            <hr>
+                                        </div>
+                                        <div class="card-body1">
+                                            <canvas id="myChart" style="height:40vh; width:80vw"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fee-detail  col-md-6 col-sm-12  mt-4">
+                                <div class="">
+                                    <div class="card height337 title">
+                                        <div class="card-header1 ">
+                                            <h2 class="custom-font"><strong>Fee Details </strong> - Monthly Fee</h2>
+                                            <i style="
+                  padding-right: 19px;
+                  line-height: 57px;
+                  border-left: 1px solid rgba(0,0,0,.1);;
+                  padding-left: 19px;
+                  " class=" icon-cog float-right"></i>
+                                            <hr>
+                                        </div>
+                                        <div class="card-body1">
+                                            <canvas id="pie-chart" style="height:40vh; width:80vw"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- finance -->
+                <section class="  col-md-12">
+                    <!-- fee collection -->
+                    <div class="row">
+                        <div class="finance  col-md-6 col-sm-12  mt-4">
+                            <div class="card height337 title">
+                                <div class="card-header1 ">
+                                    <h2 class="custom-font"><strong>Fee</strong> Collection</h2>
+                                    <i style="
+                padding-right: 19px;
+                line-height: 57px;
+                border-left: 1px solid rgba(0,0,0,.1);;
+                padding-left: 19px;
+                " class=" icon-cog float-right"></i>
+                                    <hr>
+                                </div>
+                                <div class="card-body1">
+                                    <canvas id="bar-chart-horizontal" style="height:40vh; width:80vw"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fee-detail  col-md-6 col-sm-12  mt-4">
+                            <div class="card height337 title">
+                                <div class="card-header1 ">
+                                    <h2 class="custom-font"><strong>Fee Collection </strong> - Item Wise</h2>
+                                    <i style="
+                padding-right: 19px;
+                line-height: 57px;
+                border-left: 1px solid rgba(0,0,0,.1);;
+                padding-left: 19px;
+                " class=" icon-cog float-right"></i>
+                                    <hr>
+                                </div>
+                                <div class="card-body1">
+                                    <canvas id="bubble-chart" style="height:40vh; width:80vw"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- fee collection -->
+                <section class="  col-md-12 ">
+                    <!-- per class attendance -->
+                    <div class="row">
+                        <div class="finance  col-md-6 col-sm-12  mt-4">
+                            <div class="card height337 title">
+                                <div class="card-header1 ">
+                                    <h2 class="custom-font"><strong>Per Class</strong> Attendance</h2>
+                                    <i style="
+                padding-right: 19px;
+                line-height: 57px;
+                border-left: 1px solid rgba(0,0,0,.1);;
+                padding-left: 19px;
+                " class=" icon-cog float-right"></i>
+                                    <hr>
+                                </div>
+                                <div class="card-body1">
+                                    <canvas id="mixed-chart" style="height:40vh; width:80vw"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fee-detail  col-md-6 col-sm-12  mt-4">
+                            <div class="card height337 title">
+                                <div class="card-header1 ">
+                                    <h2 class="custom-font"><strong>Monthly </strong> Attendance</h2>
+                                    <i style="
+                padding-right: 19px;
+                line-height: 57px;
+                border-left: 1px solid rgba(0,0,0,.1);;
+                padding-left: 19px;
+                " class=" icon-cog float-right"></i>
+                                    <hr>
+                                </div>
+                                <div class="card-body1">
+                                    <canvas id="polar-chart" style="height:40vh; width:80vw"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- per class attendance -->
+                <section class="  col-md-12 ">
+                    <!-- withdrawal Per section -->
+                    <div class="row">
+                        <div class="finance  col-md-6 col-sm-12  mt-4">
+                            <div class="card height337 title">
+                                <div class="card-header1 ">
+                                    <h2 class="custom-font"><strong>Withdrawal</strong> Per Session</h2>
+                                    <i style="
+                padding-right: 19px;
+                line-height: 57px;
+                border-left: 1px solid rgba(0,0,0,.1);;
+                padding-left: 19px;
+                " class=" icon-cog float-right"></i>
+                                    <hr>
+                                </div>
+                                <div class="card-body1">
+                                    <canvas id="line-chart" style="height:40vh; width:80vw"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fee-detail  col-md-6 col-sm-12  mt-4">
+                            <div class="card height337 title">
+                                <div class="card-header1 ">
+                                    <h2 class="custom-font"><strong>New Registration </strong> Per Session</h2>
+                                    <i style="
+                padding-right: 19px;
+                line-height: 57px;
+                border-left: 1px solid rgba(0,0,0,.1);;
+                padding-left: 19px;
+                " class=" icon-cog float-right"></i>
+                                    <hr>
+                                </div>
+                                <div class="card-body1">
+                                    <canvas id="mixed-chart1" style="height:40vh; width:80vw"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- column right -->

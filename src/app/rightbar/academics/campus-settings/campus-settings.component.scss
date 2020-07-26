@@ -1,0 +1,54 @@
+.academic {
+    position: relative;
+    .academic_record {
+        position: relative;
+        box-shadow: 1px 1px 2px silver;
+        position: relative;
+        font-size: 12px;
+        font-weight: 400;
+        tr th {
+            font-weight: bold;
+        }
+    }
+}
+
+.academics {
+    background-color: #e7e9ea;
+    .school {
+        button {
+            box-shadow: 0 3px 0 0 #314b83;
+            background-color: #475b96;
+            border-radius: 5px;
+            font-size: 12px;
+            color: white;
+        }
+        span.fa {
+            padding: 0 5px;
+            margin-right: 6px;
+            border-right: 1px solid white;
+        }
+        .circle {
+            border: 1px solid #16a085;
+            border-radius: 50%;
+            padding: 5px;
+            color: #16a085;
+        }
+    }
+    .photo {
+        width: 174px;
+        position: relative;
+        height: 174px;
+        background-size: 100%;
+        background-image: url("src/assets/school.jpg");
+        border: 1px solid black;
+        .bottom {
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            margin: auto;
+            left: 9px;
+            width: 90%;
+            background-color: #335b93;
+        }
+    }
+}

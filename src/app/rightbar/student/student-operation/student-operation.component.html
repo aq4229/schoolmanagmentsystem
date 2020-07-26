@@ -1,0 +1,437 @@
+<section class="student_operations">
+
+    <div class="container-fluid">
+
+        <ul class="nav nav-tabs bg-white general_tab " role="tablist">
+            <li role="presentation" Class="active">
+                <a role="tab" href="#1" data-toggle="tab" title="#withdrawal">STUDENT WITHDRAWAL </a>
+            </li>
+            <li role="presentation">
+                <a role="tab" href="#promotion" data-toggle="tab" title="">STUDENT PROMOTION</a>
+            </li>
+            <li role="presentation">
+                <a role="tab" href="#transfer" data-toggle="tab" title="">STUDENT TRANSFER</a>
+            </li>
+            <li role="presentation">
+                <a role="tab" href="#passout" data-toggle="tab" title="">STUDENT PASS OUTE</a>
+            </li>
+
+        </ul>
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active " id="withdrawal">
+                <form action="student_operations_submit" method="get">
+
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <label for="">School*</label>
+                            <select name="" class="form-control">
+                  <option value="" disabled="" selected="" class="">Select School</option>
+                  <option value="0" label="Garrison Academy Walton Cantt">Garrison Academy Walton Cantt</option>
+                  <option value="1" label="Garrison College for Girls">Garrison College for Girls</option>
+                  <option value="2" label="Garrison College for Boys">Garrison College for Boys</option>
+                  <option value="3" label="Gar Academy (Snr) Tufail Shaheed Campus">Gar Academy (Snr) Tufail Shaheed
+                    Campus</option>
+                  <option value="4" label="APS Garrison Junior">APS Garrison Junior</option>
+                  <option value="5" label="APS Mehfooz Shaheed Gar">APS Mehfooz Shaheed Gar</option>
+                  <option value="6" label="Garrison Academy for Girls">Garrison Academy for Girls</option>
+                  <option value="7" label="APS &amp; C for Girls (Azam Gar)">APS &amp; C for Girls (Azam Gar)</option>
+                  <option value="8" label="Gar Academy JNR Tufail Shaheed Campus">Gar Academy JNR Tufail Shaheed Campus
+                  </option>
+                  <option value="9" label="Garrison Academy Chitral Line">Garrison Academy Chitral Line</option>
+                  <option value="10" label="Garrison Academy Junior SSC">Garrison Academy Junior SSC</option>
+                  <option value="11" label="Garrison Boys High School &amp; College">Garrison Boys High School &amp;
+                    College</option>
+                  <option value="12" label="Garrison Academy for Cambridge Studies">Garrison Academy for Cambridge
+                    Studies</option>
+                  <option value="13" label="Garrison Junior Academy">Garrison Junior Academy</option>
+                  <option value="14" label="Garrison Academy for Boys">Garrison Academy for Boys</option>
+                  <option value="15" label="LGES Sectt">LGES Sectt</option>
+
+                </select>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <label for="">Branch*</label>
+                            <select class="form-control " required="" aria-invalid="true">
+                  <option value="" disabled="">Select Branch</option>
+                  <option value="0" label="Garrison Academy Walton Cantt">Garrison Academy Walton Cantt</option>
+                  <option value="1" label="Garrison College for Girls">Garrison College for Girls</option>
+                  <option value="2" label="Garrison College for Boys">Garrison College for Boys</option>
+                  <option value="3" label="Gar Academy SNR Tufail Shaheed Campus">Gar Academy SNR Tufail Shaheed Campus
+                  </option>
+                  <option value="4" label="Army Public School Garrison Junior">Army Public School Garrison Junior
+                  </option>
+                  <option value="5" label="ArmyPublicSchoolMehfoozShaheedGarrison">
+                    ArmyPublicSchoolMehfoozShaheedGarrison</option>
+                  <option value="6" label="Garrison Academy for Girls">Garrison Academy for Girls</option>
+                  <option value="7" label="Army Public School Azam Garrison">Army Public School Azam Garrison</option>
+                  <option value="8" label="Gar Academy JNR Tufail Shaheed Campus">Gar Academy JNR Tufail Shaheed Campus
+                  </option>
+                  <option value="9" label="Garrison Academy Chitral Line">Garrison Academy Chitral Line</option>
+                  <option value="10" label="GarrisonAcademyJuniorSarwarShaheedCampus">
+                    GarrisonAcademyJuniorSarwarShaheedCampus</option>
+                  <option value="11" label="Garrison Boys High School">Garrison Boys High School</option>
+                  <option value="12" label="Garrison Academy for Cambridge Studies">Garrison Academy for Cambridge
+                    Studies</option>
+                  <option value="13" label="Garrison Junior Academy">Garrison Junior Academy</option>
+                  <option value="14" label="Garrison Academy for Boys">Garrison Academy for Boys</option>
+                  <option value="15" label="Lges">Lges</option>
+                </select>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <label for="">Shift</label>
+                            <select class="form-control">
+                  <option value="" selected="" disabled>Select Shift</option>
+
+                </select>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <label for="">Wing</label>
+                            <select class="form-control">
+                  <option value="" selected="" disabled>Select Wing</option>
+
+                </select>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <label for="">Class*</label>
+                            <select class="form-control">
+                  <option value="" selected="" disabled>Select Class</option>
+
+                </select>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <label for="">Section</label>
+                            <select class="form-control">
+                  <option value="" selected="" disabled>Select Section</option>
+
+                </select>
+                        </div>
+
+                    </div>
+                    <!-- row -->
+                    <div class="modal-footer">
+                        <div class="input-group-btn overflow-hidden position-relative">
+
+
+                            <button type="button" class="border-0 genrate_btn warning-btn">
+
+                  Generate <i class="fa fa-arrow-right"></i>
+                </button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+            <div role="tabpanel" class="tab-pane  " id="promotion">
+                <form action="student_operations_submit" method="get">
+
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <label for="">School*</label>
+                            <select name="" class="form-control">
+                  <option value="" disabled="" selected="" class="">Select School</option>
+                  <option value="0" label="Garrison Academy Walton Cantt">Garrison Academy Walton Cantt</option>
+                  <option value="1" label="Garrison College for Girls">Garrison College for Girls</option>
+                  <option value="2" label="Garrison College for Boys">Garrison College for Boys</option>
+                  <option value="3" label="Gar Academy (Snr) Tufail Shaheed Campus">Gar Academy (Snr) Tufail Shaheed
+                    Campus</option>
+                  <option value="4" label="APS Garrison Junior">APS Garrison Junior</option>
+                  <option value="5" label="APS Mehfooz Shaheed Gar">APS Mehfooz Shaheed Gar</option>
+                  <option value="6" label="Garrison Academy for Girls">Garrison Academy for Girls</option>
+                  <option value="7" label="APS &amp; C for Girls (Azam Gar)">APS &amp; C for Girls (Azam Gar)</option>
+                  <option value="8" label="Gar Academy JNR Tufail Shaheed Campus">Gar Academy JNR Tufail Shaheed Campus
+                  </option>
+                  <option value="9" label="Garrison Academy Chitral Line">Garrison Academy Chitral Line</option>
+                  <option value="10" label="Garrison Academy Junior SSC">Garrison Academy Junior SSC</option>
+                  <option value="11" label="Garrison Boys High School &amp; College">Garrison Boys High School &amp;
+                    College</option>
+                  <option value="12" label="Garrison Academy for Cambridge Studies">Garrison Academy for Cambridge
+                    Studies</option>
+                  <option value="13" label="Garrison Junior Academy">Garrison Junior Academy</option>
+                  <option value="14" label="Garrison Academy for Boys">Garrison Academy for Boys</option>
+                  <option value="15" label="LGES Sectt">LGES Sectt</option>
+
+                </select>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <label for="">Branch*</label>
+                            <select class="form-control " required="" aria-invalid="true">
+                  <option value="" disabled="">Select Branch</option>
+                  <option value="0" label="Garrison Academy Walton Cantt">Garrison Academy Walton Cantt</option>
+                  <option value="1" label="Garrison College for Girls">Garrison College for Girls</option>
+                  <option value="2" label="Garrison College for Boys">Garrison College for Boys</option>
+                  <option value="3" label="Gar Academy SNR Tufail Shaheed Campus">Gar Academy SNR Tufail Shaheed Campus
+                  </option>
+                  <option value="4" label="Army Public School Garrison Junior">Army Public School Garrison Junior
+                  </option>
+                  <option value="5" label="ArmyPublicSchoolMehfoozShaheedGarrison">
+                    ArmyPublicSchoolMehfoozShaheedGarrison</option>
+                  <option value="6" label="Garrison Academy for Girls">Garrison Academy for Girls</option>
+                  <option value="7" label="Army Public School Azam Garrison">Army Public School Azam Garrison</option>
+                  <option value="8" label="Gar Academy JNR Tufail Shaheed Campus">Gar Academy JNR Tufail Shaheed Campus
+                  </option>
+                  <option value="9" label="Garrison Academy Chitral Line">Garrison Academy Chitral Line</option>
+                  <option value="10" label="GarrisonAcademyJuniorSarwarShaheedCampus">
+                    GarrisonAcademyJuniorSarwarShaheedCampus</option>
+                  <option value="11" label="Garrison Boys High School">Garrison Boys High School</option>
+                  <option value="12" label="Garrison Academy for Cambridge Studies">Garrison Academy for Cambridge
+                    Studies</option>
+                  <option value="13" label="Garrison Junior Academy">Garrison Junior Academy</option>
+                  <option value="14" label="Garrison Academy for Boys">Garrison Academy for Boys</option>
+                  <option value="15" label="Lges">Lges</option>
+                </select>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <label for="">Shift</label>
+                            <select class="form-control">
+                  <option value="" selected="" disabled>Select Shift</option>
+
+                </select>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <label for="">Wing</label>
+                            <select class="form-control">
+                  <option value="" selected="" disabled>Select Wing</option>
+
+                </select>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <label for="">Class*</label>
+                            <select class="form-control">
+                  <option value="" selected="" disabled>Select Class</option>
+
+                </select>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <label for="">Section</label>
+                            <select class="form-control">
+                  <option value="" selected="" disabled>Select Section</option>
+
+                </select>
+                        </div>
+
+                    </div>
+                    <!-- row -->
+                    <div class="modal-footer">
+                        <div class="input-group-btn overflow-hidden position-relative">
+
+
+                            <button type="button" class="btn genrate_btn">
+
+                  Generate <i class="fa fa-arrow-right"></i>
+                </button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+            <div role="tabpanel" class="tab-pane  " id="transfer">
+                <form action="student_operations_submit" method="get">
+
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <label for="">School*</label>
+                            <select name="" class="form-control">
+                  <option value="" disabled="" selected="" class="">Select School</option>
+                  <option value="0" label="Garrison Academy Walton Cantt">Garrison Academy Walton Cantt</option>
+                  <option value="1" label="Garrison College for Girls">Garrison College for Girls</option>
+                  <option value="2" label="Garrison College for Boys">Garrison College for Boys</option>
+                  <option value="3" label="Gar Academy (Snr) Tufail Shaheed Campus">Gar Academy (Snr) Tufail Shaheed
+                    Campus</option>
+                  <option value="4" label="APS Garrison Junior">APS Garrison Junior</option>
+                  <option value="5" label="APS Mehfooz Shaheed Gar">APS Mehfooz Shaheed Gar</option>
+                  <option value="6" label="Garrison Academy for Girls">Garrison Academy for Girls</option>
+                  <option value="7" label="APS &amp; C for Girls (Azam Gar)">APS &amp; C for Girls (Azam Gar)</option>
+                  <option value="8" label="Gar Academy JNR Tufail Shaheed Campus">Gar Academy JNR Tufail Shaheed Campus
+                  </option>
+                  <option value="9" label="Garrison Academy Chitral Line">Garrison Academy Chitral Line</option>
+                  <option value="10" label="Garrison Academy Junior SSC">Garrison Academy Junior SSC</option>
+                  <option value="11" label="Garrison Boys High School &amp; College">Garrison Boys High School &amp;
+                    College</option>
+                  <option value="12" label="Garrison Academy for Cambridge Studies">Garrison Academy for Cambridge
+                    Studies</option>
+                  <option value="13" label="Garrison Junior Academy">Garrison Junior Academy</option>
+                  <option value="14" label="Garrison Academy for Boys">Garrison Academy for Boys</option>
+                  <option value="15" label="LGES Sectt">LGES Sectt</option>
+
+                </select>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <label for="">Branch*</label>
+                            <select class="form-control " required="" aria-invalid="true">
+                  <option value="" disabled="">Select Branch</option>
+                  <option value="0" label="Garrison Academy Walton Cantt">Garrison Academy Walton Cantt</option>
+                  <option value="1" label="Garrison College for Girls">Garrison College for Girls</option>
+                  <option value="2" label="Garrison College for Boys">Garrison College for Boys</option>
+                  <option value="3" label="Gar Academy SNR Tufail Shaheed Campus">Gar Academy SNR Tufail Shaheed Campus
+                  </option>
+                  <option value="4" label="Army Public School Garrison Junior">Army Public School Garrison Junior
+                  </option>
+                  <option value="5" label="ArmyPublicSchoolMehfoozShaheedGarrison">
+                    ArmyPublicSchoolMehfoozShaheedGarrison</option>
+                  <option value="6" label="Garrison Academy for Girls">Garrison Academy for Girls</option>
+                  <option value="7" label="Army Public School Azam Garrison">Army Public School Azam Garrison</option>
+                  <option value="8" label="Gar Academy JNR Tufail Shaheed Campus">Gar Academy JNR Tufail Shaheed Campus
+                  </option>
+                  <option value="9" label="Garrison Academy Chitral Line">Garrison Academy Chitral Line</option>
+                  <option value="10" label="GarrisonAcademyJuniorSarwarShaheedCampus">
+                    GarrisonAcademyJuniorSarwarShaheedCampus</option>
+                  <option value="11" label="Garrison Boys High School">Garrison Boys High School</option>
+                  <option value="12" label="Garrison Academy for Cambridge Studies">Garrison Academy for Cambridge
+                    Studies</option>
+                  <option value="13" label="Garrison Junior Academy">Garrison Junior Academy</option>
+                  <option value="14" label="Garrison Academy for Boys">Garrison Academy for Boys</option>
+                  <option value="15" label="Lges">Lges</option>
+                </select>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <label for="">Shift</label>
+                            <select class="form-control">
+                  <option value="" selected="" disabled>Select Shift</option>
+
+                </select>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <label for="">Wing</label>
+                            <select class="form-control">
+                  <option value="" selected="" disabled>Select Wing</option>
+
+                </select>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <label for="">Class*</label>
+                            <select class="form-control">
+                  <option value="" selected="" disabled>Select Class</option>
+
+                </select>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <label for="">Section</label>
+                            <select class="form-control">
+                  <option value="" selected="" disabled>Select Section</option>
+
+                </select>
+                        </div>
+
+                    </div>
+                    <!-- row -->
+                    <div class="modal-footer">
+                        <div class="input-group-btn overflow-hidden position-relative">
+
+
+                            <button type="button" class="btn genrate_btn">
+
+                  Generate <i class="fa fa-arrow-right"></i>
+                </button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+            <div role="tabpanel" class="tab-pane SHOW " id="passout">
+                <form action="student_operations_submit" method="get">
+
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <label for="">School*</label>
+                            <select name="" class="form-control">
+                  <option value="" disabled="" selected="" class="">Select School</option>
+                  <option value="0" label="Garrison Academy Walton Cantt">Garrison Academy Walton Cantt</option>
+                  <option value="1" label="Garrison College for Girls">Garrison College for Girls</option>
+                  <option value="2" label="Garrison College for Boys">Garrison College for Boys</option>
+                  <option value="3" label="Gar Academy (Snr) Tufail Shaheed Campus">Gar Academy (Snr) Tufail Shaheed
+                    Campus</option>
+                  <option value="4" label="APS Garrison Junior">APS Garrison Junior</option>
+                  <option value="5" label="APS Mehfooz Shaheed Gar">APS Mehfooz Shaheed Gar</option>
+                  <option value="6" label="Garrison Academy for Girls">Garrison Academy for Girls</option>
+                  <option value="7" label="APS &amp; C for Girls (Azam Gar)">APS &amp; C for Girls (Azam Gar)</option>
+                  <option value="8" label="Gar Academy JNR Tufail Shaheed Campus">Gar Academy JNR Tufail Shaheed Campus
+                  </option>
+                  <option value="9" label="Garrison Academy Chitral Line">Garrison Academy Chitral Line</option>
+                  <option value="10" label="Garrison Academy Junior SSC">Garrison Academy Junior SSC</option>
+                  <option value="11" label="Garrison Boys High School &amp; College">Garrison Boys High School &amp;
+                    College</option>
+                  <option value="12" label="Garrison Academy for Cambridge Studies">Garrison Academy for Cambridge
+                    Studies</option>
+                  <option value="13" label="Garrison Junior Academy">Garrison Junior Academy</option>
+                  <option value="14" label="Garrison Academy for Boys">Garrison Academy for Boys</option>
+                  <option value="15" label="LGES Sectt">LGES Sectt</option>
+
+                </select>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <label for="">Branch*</label>
+                            <select class="form-control " required="" aria-invalid="true">
+                  <option value="" disabled="">Select Branch</option>
+                  <option value="0" label="Garrison Academy Walton Cantt">Garrison Academy Walton Cantt</option>
+                  <option value="1" label="Garrison College for Girls">Garrison College for Girls</option>
+                  <option value="2" label="Garrison College for Boys">Garrison College for Boys</option>
+                  <option value="3" label="Gar Academy SNR Tufail Shaheed Campus">Gar Academy SNR Tufail Shaheed Campus
+                  </option>
+                  <option value="4" label="Army Public School Garrison Junior">Army Public School Garrison Junior
+                  </option>
+                  <option value="5" label="ArmyPublicSchoolMehfoozShaheedGarrison">
+                    ArmyPublicSchoolMehfoozShaheedGarrison</option>
+                  <option value="6" label="Garrison Academy for Girls">Garrison Academy for Girls</option>
+                  <option value="7" label="Army Public School Azam Garrison">Army Public School Azam Garrison</option>
+                  <option value="8" label="Gar Academy JNR Tufail Shaheed Campus">Gar Academy JNR Tufail Shaheed Campus
+                  </option>
+                  <option value="9" label="Garrison Academy Chitral Line">Garrison Academy Chitral Line</option>
+                  <option value="10" label="GarrisonAcademyJuniorSarwarShaheedCampus">
+                    GarrisonAcademyJuniorSarwarShaheedCampus</option>
+                  <option value="11" label="Garrison Boys High School">Garrison Boys High School</option>
+                  <option value="12" label="Garrison Academy for Cambridge Studies">Garrison Academy for Cambridge
+                    Studies</option>
+                  <option value="13" label="Garrison Junior Academy">Garrison Junior Academy</option>
+                  <option value="14" label="Garrison Academy for Boys">Garrison Academy for Boys</option>
+                  <option value="15" label="Lges">Lges</option>
+                </select>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <label for="">Shift</label>
+                            <select class="form-control">
+                  <option value="" selected="" disabled>Select Shift</option>
+
+                </select>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <label for="">Wing</label>
+                            <select class="form-control">
+                  <option value="" selected="" disabled>Select Wing</option>
+
+                </select>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <label for="">Class*</label>
+                            <select class="form-control">
+                  <option value="" selected="" disabled>Select Class</option>
+
+                </select>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <label for="">Section</label>
+                            <select class="form-control">
+                  <option value="" selected="" disabled>Select Section</option>
+
+                </select>
+                        </div>
+
+                    </div>
+                    <!-- row -->
+                    <div class="modal-footer">
+                        <div class="input-group-btn overflow-hidden position-relative">
+
+
+                            <button type="button" class=" genrate_btn warning-btn border-0 ">
+
+                  D <i class="fa fa-arrow-right"></i>
+                </button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</section>

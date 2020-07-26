@@ -1,0 +1,405 @@
+<div class="columnleft" id="navbarSupportedContent" aria-expanded="false">
+    <!-- start: Main Menu -->
+    <div id="sidebar-left" class="sidebar-left">
+        <div class="nav-collapse sidebar-nav">
+            <ul class="nav  nav-stacked main-menu">
+                <!-- main ul -->
+                <li>
+                    <div class="dropmenu">
+                        <a [routerLink]="['']" routerLinkActive="router-link-active"><i
+                class="fa fa-dashboard mr-15"></i>Dashboard</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropmenu" href="#setting" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="setting">
+                        <a class="">
+                            <i class="fa fa-graduation-cap mr-15"></i>Academics
+                            <i class="plusminus fa fa-plus float-right"> </i>
+                        </a>
+                    </div>
+                    <ul class="ptb5 innermenu ml-30 collapse" id="setting">
+                        <li>
+                            <a class="innermenu-item"> <i class="fa  fa-cogs mr-3"></i> Settings <i class="plusminus fa fa-plus float-right"> </i></a>
+                            <ul class="ptb5 innermenusub">
+                                <li routerLinkActive="active" [routerLink]="['campus']">
+                                    <a class=""> <i class="fa fa-home mr-3"></i> Campus</a>
+                                </li>
+                                <li routerLinkActive="active" [routerLink]="['setting']">
+                                    <a class=""> <i class="fa fa-cog mr-3"></i> Academic Settings</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="dropmenu">
+                        <a class="p830px"><i class="fa fa-group mr-15"></i>Student<i
+                class="plusminus fa fa-plus float-right"></i></a>
+                    </div>
+                    <ul class="ptb5 innermenu">
+                        <li routerLinkActive="active" [routerLink]="['admission']"><a class=""><i
+                  class="fa fa-plus mr-15"></i>Admissions<i class="glyphicon glyphicon-euro"></i></a></li>
+                        <li routerLinkActive="active" [routerLink]="['studentlist']"><a class=""><i
+                  class="fa fa-list-alt mr-15"></i>Student List</a></li>
+                        <li routerLinkActive="active" [routerLink]="['operation']">
+                            <a class="">
+                                <i class="fa fa-gear mr-15"></i>Operations</a>
+                        </li>
+                        <li>
+                            <a class="innermenu-item"><i class="fa fa-folder-open mr-15"></i>Reports
+                <i class="plusminus fa fa-plus float-right"></i></a>
+                            <ul class="innermenusub">
+                                <li routerLinkActive="active" [routerLink]="['list']">
+                                    <a class=""> <i class="fa fa-file-excel-o mr-15"></i> Student List Report <span class="badge badge-primary float-right"><i class="fa fa-envelope" name="envelope"></i></span> </a>
+                                </li>
+                                <li routerLinkActive="active" [routerLink]="['standard']">
+                                    <a> <i class="fa fa-file-excel-o mr-15"></i> Standard Student Report </a>
+                                </li>
+                                <li routerLinkActive="active" [routerLink]="['sibiling']">
+                                    <a class=""> <i class="fa fa-file-excel-o mr-15"></i> Student Sibling Report </a>
+                                </li>
+                                <li routerLinkActive="active" [routerLink]="['transfer']">
+                                    <a class=""> <i class="fa fa-file-excel-o mr-15"></i> Student Transfer Report</a>
+                                </li>
+                                <li routerLinkActive="active" [routerLink]="['poromotion']">
+                                    <a class=""> <i class="fa fa-file-excel-o mr-15"></i> Student Promotion Report</a>
+                                </li>
+                                <li routerLinkActive="active" [routerLink]="['withdrawal']">
+                                    <a class=""> <i class="fa fa-file-excel-o mr-15"></i> Student Withdrawal Report</a>
+                                </li>
+                                <li routerLinkActive="active" [routerLink]="['passout']">
+                                    <a class=""> <i class="fa fa-file-excel-o mr-15"></i> Student Pass Out Report</a>
+                                </li>
+                                <li routerLinkActive="active" [routerLink]="['former']">
+                                    <a class=""> <i class="fa fa-file-excel-o mr-15"></i> Former Student's Report</a>
+                                </li>
+                                <li routerLinkActive="active" [routerLink]="['readmission']">
+                                    <a class=""> <i class="fa fa-file-excel-o mr-15"></i> Student Re-Admission Report</a>
+                                </li>
+                                <li routerLinkActive="active" [routerLink]="['health']">
+                                    <a class=""> <i class="fa fa-file-excel-o mr-15"></i> Student Health Report</a>
+                                </li>
+                                <li routerLinkActive="active" [routerLink]="['birthday']">
+                                    <a class=""> <i class="fa fa-file-excel-o mr-15"></i> Student Birthday Calendar</a>
+                                </li>
+                                <li routerLinkActive="active" [routerLink]="['admissionreport']">
+                                    <a class=""> <i class="fa fa-file-excel-o mr-15"></i> Student Admission Report </a>
+                                </li>
+                                <li routerLinkActive="active" [routerLink]="['weekly']">
+                                    <a> <i class="fa fa-file-excel-o mr-15"></i> Strength Weekly Report </a>
+                                </li>
+                                <li routerLinkActive="active" [routerLink]="['sectionwise']">
+                                    <a> <i class="fa fa-file-excel-o mr-15"></i> Strength Sec Wise Report </a>
+                                </li>
+                                <li routerLinkActive="active" [routerLink]="['']">
+                                    <a> <i class="fa fa-file-excel-o mr-15"></i> Strength Fortnightly Report
+                                    </a>
+                                </li>
+                                <li routerLinkActive="active" [routerLink]="['inout']">
+                                    <a> <i class="fa fa-file-excel-o mr-15"></i> Strength In Out Report </a>
+                                </li>
+                                <li routerLinkActive="active" [routerLink]="['category']">
+                                    <a> <i class="fa fa-file-excel-o mr-15"></i> Strength Category Wise Report </a>
+                                </li>
+                                <li routerLinkActive="active" [routerLink]="['gender']">
+                                    <a> <i class="fa fa-file-excel-o mr-15"></i> Strength Gender Wise Report </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="innermenu-item"><i class="fa fa-cogs mr-15"></i>Settings
+                <i class="plusminus fa fa-plus float-right"></i></a>
+                            <ul class="innermenusub">
+                                <li>
+                                    <a> <i class="fa fa-cog mr-15" name="cog"></i> Form Setting</a>
+                                </li>
+                                <li>
+                                    <a> <i class="fa fa-cog mr-15" name="cog"></i> Student Bulk Upload</a>
+                                </li>
+                                <li>
+                                    <a> <i class="fa fa-cog mr-15" name="cog"></i> Student Strenght </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="dropmenu">
+                        <a class=" p830px" href="#"><i class="fa fa-check mr-15"></i>Attendance<i
+                class="plusminus fa fa-plus float-right"></i></a>
+                    </div>
+                    <ul class="ptb5 innermenu">
+                        <li routerLinkActive="active" [routerLink]="['student_attendance']">
+                            <a class=""> <i class="fa fa-check text-underline mr-15"> </i> Student Attendance </a>
+                        </li>
+                        <li>
+                            <a class="innermenu-item"> <i class="fa fa-folder-open mr-15"> </i> Report <i class="plusminus fa fa-plus float-right"> </i> </a>
+                            <ul class="innermenusub ">
+                                <li routerLinkActive="active" [routerLink]="['student_attendance_report']">
+                                    <a class="">
+                                        <i class="fa fa-file-excel-o mr-15"></i>Student Attendance Report
+                                        <i style="background-color: #337ab7;color: white; width: 15px;height: 15px; margin-left: 3px; padding: 2px 1px; border-radius: 50%;" class="fa fa-envelope">
+                    </i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="dropmenu">
+                        <a class="dropmenu3 p830px" href="#"><i class="mr-15 fa fa-dollar"></i> Finance<i
+                class=" plusminus fa fa-plus  float-right"></i></a>
+                    </div>
+                    <ul class="ptb5 innermenu">
+                        <li>
+                            <a class="innermenu-item"> <i class="fa fa-database mr-15"></i>Accounts<i class="plusminus fa fa-plus float-right"> </i> </a>
+                            <ul class="innermenusub">
+                                <li>
+                                    <a class=""> <i class="fa fa-bank" name="bank"></i> Transactions</a>
+                                </li>
+                                <li>
+                                    <a class=""> <i class="fa fa-file-text-o" name="file-text-o"></i> Ledgers</a>
+                                </li>
+                                <li>
+                                    <a class=""> <i class="fa fa-bar-chart-o" name="bar-chart-o"></i> Income Statement</a>
+                                </li>
+                                <li>
+                                    <a class=""> <i class="fa fa-align-center"></i> Balance Sheet</a>
+                                </li>
+                                <li>
+                                    <a class=""> <i class="fa fa-search" name="search"></i> Trial Balance</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li [routerLink]="['/fee']" routerLinkActive="router-link-active">
+                            <a class=""> <i class="fa fa-money mr-15"></i>Fee</a>
+                        </li>
+                        <li>
+                            <a class="innermenu-item"> <i class="fa fa-folder-open mr-15"></i>Reports <i class="plusminus fa fa-plus  float-right"></i>
+                            </a>
+                            <ul class="innermenusub pl-15">
+                                <li [routerLink]="['/remainingbalance']" routerLinkActive="router-link-active">
+                                    <a class=""> <i class="fa fa-file-excel-o mr-15"></i>Student List with Remaining Balance <span class="badge badge-primary float-right"><i class="fa fa-envelope"></i></span></a>
+                                </li>
+                                <li [routerLink]="['/feelist']" routerLinkActive="router-link-active">
+                                    <a class=""> <i class="fa fa-file-excel-o mr-15"></i>Fee List</a>
+                                </li>
+                                <li [routerLink]="['/feesummary']" routerLinkActive="router-link-active">
+                                    <a class=""> <i class="fa fa-file-excel-o mr-15"></i>Fee Summary</a>
+                                </li>
+                                <li [routerLink]="['/feeheadoffice']" routerLinkActive="router-link-active">
+                                    <a class=""> <i class="fa fa-file-excel-o mr-15"></i>Fee Comprehensive Head Office</a>
+                                </li>
+                                <li [routerLink]="['/feecampuswise']" routerLinkActive="router-link-active">
+                                    <a class=""> <i class="fa fa-file-excel-o mr-15"></i>Fee Comprehensive For Campus </a>
+                                </li>
+                                <li [routerLink]="['/feesectionincharge']" routerLinkActive="router-link-active">
+                                    <a class=""> <i class="fa fa-file-excel-o mr-15"></i>Fee Comprehensive For Section Incharge </a>
+                                </li>
+                                <li [routerLink]="['/feecollectionuser']" routerLinkActive="router-link-active">
+                                    <a class=""> <i class="fa fa-file-excel-o mr-15"></i>Fee Collected By User <span class="badge badge-primary float-right"><i class="fa fa-envelope"></i></span></a>
+                                </li>
+                                <li [routerLink]="['/feecollectionschool']" routerLinkActive="router-link-active">
+                                    <a class=""> <i class="fa fa-file-excel-o mr-15"></i>Fee Collected By School</a>
+                                </li>
+                                <li [routerLink]="['/feebankconciliation']" routerLinkActive="router-link-active">
+                                    <a class=""> <i class="fa fa-file-excel-o mr-15"></i>Fee Report For Bank Reconciliation</a>
+                                </li>
+                                <li [routerLink]="['/feesectionandhead']" routerLinkActive="router-link-active">
+                                    <a class=""> <i class="fa fa-file-excel-o mr-15"></i>Student Fee Report Section And Head Wise
+                                    </a>
+                                </li>
+                                <li [routerLink]="['/finecollection']" routerLinkActive="router-link-active">
+                                    <a class=""> <i class="fa fa-file-excel-o mr-15"></i>Fine Collection</a>
+                                </li>
+                                <li [routerLink]="['/feesummarydetails']" routerLinkActive="router-link-active">
+                                    <a class=""> <i class="fa fa-file-excel-o mr-15"></i>Fee Summary Detail</a>
+                                </li>
+                            </ul>
+                            <!-- <ul class="innermenusub pl-15">
+                <li>
+                  <a class=""> <i class="fa fa-file-excel-o mr-15"></i> Fee Collection <span
+                      class="badge badge-primary float-right"><i class="fa fa-envelope"></i></span></a>
+                </li>
+                <li>
+                  <a class=""> <i class="fa fa-file-excel-o mr-15"></i> Fee Collection Item Wise</a>
+                </li>
+                <li>
+                  <a class=""> <i class="fa fa-file-excel-o mr-15"></i> Student Fee</a>
+                </li>
+                <li>
+                  <a class=""> <i class="fa fa-file-excel-o mr-15"></i> Monthly Fee</a>
+                </li>
+                <li>
+                  <a class=""> <i class="fa fa-file-excel-o mr-15"></i> Daily Fee</a>
+                </li>
+                <li>
+                  <a class=""> <i class="fa fa-file-excel-o mr-15"></i> Outstanding Fee Item Wise</a>
+                </li>
+                <li>
+                  <a class=""> <i class="fa fa-file-excel-o mr-15"></i> Outstanding Fee <span
+                      class="badge badge-primary float-right"><i class="fa fa-envelope"></i></span></a>
+                </li>
+                <li>
+                  <a class=""> <i class="fa fa-file-excel-o mr-15"></i> Session Wise Fee</a>
+                </li>
+                <li>
+                  <a class=""> <i class="fa fa-file-excel-o mr-15"></i> Fee Structure</a>
+                </li>
+                <li>
+                  <a class=""> <i class="fa fa-file-excel-o mr-15"></i> Student Reconcilation Fee</a>
+                </li>
+                <li>
+                  <a class=""> <i class="fa fa-file-excel-o mr-15"></i> Fee Collection Daily/Monthly</a>
+                </li>
+                <li>
+                  <a class=""> <i class="fa fa-file-excel-o mr-15"></i> Inquiry Fee Collection</a>
+                </li>
+                <li>
+                  <a class=""> <i class="fa fa-file-excel-o mr-15"></i> Challan Issue Month Wise</a>
+                </li>
+                <li>
+                  <a class=""> <i class="fa fa-file-excel-o mr-15"></i> Fee Collection Detail Date Wise</a>
+                </li>
+                <li>
+                  <a class=""> <i class="fa fa-file-excel-o mr-15"></i> Class Wise Fee Income</a>
+                </li>
+              </ul> -->
+                        </li>
+                        <li>
+                            <a class="innermenu-item"> <i class="fa fa-cogs mr-15"></i>Settings<i class="plusminus fa fa-plus  float-right"></i>
+                            </a>
+                            <ul class=" innermenusub">
+                                <li>
+                                    <a class=""> <i class="fa fa-cog mr-15"></i> Account Settings</a>
+                                </li>
+                                <li>
+                                    <a class=""> <i class="fa fa-cog mr-15" name="cog"></i> Fee Settings</a>
+                                </li>
+                                <li>
+                                    <a class=""> <i class="fa fa-cog mr-15"></i> Contact Settings</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="dropmenu">
+                        <a class=" p830px" href="#"><i class=" mr-15 fa fa-cog"></i>Examination<i
+                class="plusminus fa fa-plus  float-right"> </i> </a> </div>
+                    <ul class="ptb5 innermenu">
+                        <li><a class=""><i class="fa fa-folder-open mr-15"></i>Assessment Operations</a></li>
+                        <li><a class=""><i class="fa fa-folder-open mr-15"></i>Special Assessment Operations</a></li>
+                        <li><a class=""><i class="fa fa-cog mr-15"></i>Settings</a></li>
+                        <li><a class="innermenu-item"><i class="fa fa-folder-open mr-15"></i>Reports<i
+                  class="plusminus fa fa-plus float-right"></i></a>
+                            <ul class="innermenusub">
+                                <li><a class=""><i class="fa fa-file-excel-o mr-15"></i> Evaluation Criteria Report<span
+                      class="badge badge-primary float-right"><i class="fa fa-envelope" name="envelope"></i></span> </a>
+                                </li>
+                                <li><a class=""><i class="fa fa-file-excel-o mr-15"></i> Result Compliation Report <span
+                      class="badge badge-primary float-right"><i class="fa fa-envelope" name="envelope"></i></span> </a>
+                                </li>
+                                <li><a class=""><i class="fa fa-file-excel-o mr-15"></i> Multi Result Compliation Report</a></li>
+                                <li><a class=""><i class="fa fa-file-excel-o mr-15"></i> Result Card </a></li>
+                                <li><a class=""><i class="fa fa-file-excel-o mr-15"></i> Report Card </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="dropmenu">
+                        <a class=" p830px" href="#"><i class="mr-15 fa fa-envelope"></i>Communication
+                        <i class="plusminus fa fa-plus  float-right"></i> </a>
+                    </div>
+                    <ul class="ptb5 innermenu">
+                        <li><a class=""><i class="fa fa-unlock-alt mr-15"></i>Setting</a></li>
+                        <li><a class="innermenu-item"><i class="fa fa-folder-open mr-15"></i>Reports<i
+                                class="plusminus fa fa-plus  float-right"></i></a>
+                            <ul class="innermenusub">
+                                <li>
+                                    <a class=""> <i class="fa fa-file-excel-o mr-15"></i> SMS Report </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="dropmenu">
+                        <a class=" p830px" href="#"><i class="mr-15 fa fa-bullseye "></i>Human Resource 
+                        <i class="plusminus fa fa-plus  float-right"></i></a>
+                    </div>
+
+                    <ul class="ptb5 innermenu">
+
+                        <li><a class=""><i class="fa fa-dashboard mr-15"></i>Dashboard</a></li>
+                        <li> <a class="innermenu-item"><i class="fa fa-users mr-15"></i>Employee
+                            <i class="plusminus fa fa-plus  float-right"></i></a>
+                            <ul class="innermenusub">
+                                <li><a class=""><i class="fa fa-user mr-15"></i>Add Employee</a></li>
+                                <li><a class=""><i class="fa fa-search mr-15"></i>Search Employees</a></li>
+                                <li><a class=""><i class="fa fa-money mr-15"></i>Employee Salary</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="innermenu-item"><i class="fas fa-coins menu-icon  mr-15"></i>Leave
+                                <i class="plusminus fa fa-plus float-right"></i></a>
+                            <ul class="innermenusub">
+                                <li><a class=""><i class="fa fa-calendar-alt mr-15"></i>Holiday Calander</a></li>
+                                <li><a class=""><i class="fa fa-calendar-day mr-15"></i>Employee Leave</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="innermenu-item"><i class="fa fa-user-check mr-15"></i>Attendance
+                            <i class="plusminus fa fa-plus  float-right"></i></a>
+                            <ul class="innermenusub">
+                                <li><a class=""><i class="fa fa-calendar-o mr-15"></i>Attendance</a></li>
+                                <li><a class=""><i class="fa fa-calendar mr-15"></i>Attendance Report</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="innermenu-item"><i class="fa fa-money-check-alt mr-15"></i>Payroll
+                                <i class="plusminus fa fa-plus  float-right"></i></a>
+                            <ul class=" innermenusub">
+
+                                <li><a class=""><i class="fa fa-hand-holding-usd mr-15"></i>Employee Loan </a></li>
+                                <li><a class=""><i class="fa fa-book-reader mr-15"></i>Salary Register</a></li>
+                                <li><a class=""><i class="fa fa-search mr-15"></i>Search Register</a></li>
+                                <li><a class=""><i class="fa fa-search mr-15"></i>Heads Ledger</a></li>
+                                <li><a class=""><i class="fa fa-search mr-15"></i>Loan Report</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="innermenu-item"><i class="fa fa-cog menu-icon mr-15"></i>Settings
+                            <i class="plusminus fa fa-plus  float-right"></i>
+                            </a>
+                            <ul class=" innermenusub">
+                                <li><a class=""><i class="fa fa-file-invoice-dollar mr-15"></i>Pay Head</a></li>
+                                <li><a class=""><i class="fa fa-paste mr-15"></i>Salary Rules</a></li>
+                                <li><a class=""><i class="fa fa-university mr-15"></i>Department</a></li>
+                                <li><a class=""><i class="fa fa-graduation-cap mr-15"></i>Designations</a></li>
+                                <li><a class=""><i class="fa fa-calendar mr-15"></i>Leave Types</a></li>
+                                <li><a class=""><i class="fa fa-user-plus mr-15"></i>Register Type</a></li>
+                                <li><a class=""><i class="fa fa-clock mr-15"></i>Shifts</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="dropmenu">
+                        <a class=" p830px" href="#"><i class="mr-15 fa fa-cogs"></i>Admin Tools
+                        <i class="plusminus fa fa-plus float-right"></i></a>
+                    </div>
+                    <ul class="ptb5 innermenu">
+                        <li><a class=""><i class="fa fa-unlock-alt mr-15"></i>Permissions</a></li>
+                        <li><a class=""><i class="fa fa-user mr-15"></i>User Settings</a></li>
+                        <li><a class=""><i class="fa fa-folder mr-15"></i>Activity Logs</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- end main ul -->
+        </div>
+    </div>
+    <!-- end: Main Menu -->
+</div>
+<!-- col-3  column-left-->

@@ -1,0 +1,87 @@
+.columnright {
+    @media screen and (max-width: 993px) {}
+    .bg-manual:hover {
+        cursor: pointer;
+        text-decoration: none;
+        color: white;
+    }
+    .jumbotron1 {
+        padding: 10px;
+        background-color: #e7e9ea;
+    }
+    .studentdata {
+        .text-elg {
+            font-size: 32px !important;
+            line-height: 34px;
+            font-weight: 700 !important;
+        }
+        .card {
+            padding: 13px 0;
+            color: #fff !important;
+        }
+        .card-image {
+            width: 110px;
+            float: left;
+            text-align: center;
+        }
+        .card-content {
+            float: left;
+            text-align: center;
+        }
+        // .card{
+        // @media screen and (max-width: 321px) {
+        // 	.card-image{
+        // 		float: none;
+        // 		margin: auto;
+        // 	}
+        // 	}
+        // }
+    }
+    .title {
+        background-color: white;
+        transition: all 0.5s ease-in;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+        // &:hover{
+        // 	box-shadow: 2px 2px 6px 2px;
+        // }
+        .title-header {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        .title-body {
+            height: 356px;
+        }
+    }
+    .widget-calendar {
+        background-color: #3f485b !important;
+        color: #fff !important;
+    }
+    .fee-collection {
+        .card-header1 {
+            height: 317px;
+        }
+    }
+    .height337 {
+        height: 337px;
+    }
+    .custom-font {
+        font-family: Dosis, Arial, sans-serif;
+        padding: 0;
+        margin: 0;
+        padding: 15px;
+        display: inline-block;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .custom-font+i+hr {
+        padding: 0;
+        margin: 0;
+    }
+    .widget-calendar .datepicker>table .btn-default {
+        background-color: #3f4e62;
+        color: #fff;
+    }
+    .widget-calendar .datepicker>table thead tr:nth-child(2) th {
+        background-color: #354252;
+    }
+}

@@ -1,0 +1,134 @@
+.employee {
+    position: relative;
+    background-color: white;
+}
+
+a {
+    color: grey;
+}
+
+a:hover {
+    color: grey;
+}
+
+li {
+    transition: 0.2s all ease-in 0.2s;
+    position: relative;
+}
+
+ul:before {
+    content: '';
+    height: 2px;
+    width: 74%;
+    display: block;
+    margin: auto;
+    background-color: #e7e9ed;
+    position: absolute;
+    top: -10px;
+}
+
+ul {
+    transition: 0.5s all ease-in 0.5s;
+}
+
+
+/* ul:after {
+    content: '';
+    height: 2px;
+    width: 27%;
+    display: block;
+    margin: auto;
+    left: 13%;
+    background-color: #1b62f1;
+    position: absolute;
+    top: -10px;
+} */
+
+
+/* ul>li:first-child {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: #e7e9ed;
+    position: absolute;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    top: -100%;
+    left: 40%;
+} */
+
+ul>li>a:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: #e7e9ed;
+    position: absolute;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    top: -100%;
+    left: 40%;
+    transition: 0.5s all ease-in 0.5s;
+    z-index: 1000;
+}
+
+a.active>strong {
+    color: blue;
+}
+
+a.active+span {
+    transition: 0.5s all ease-in 0.5s;
+}
+
+a.active:after {
+    transition: 0.5s all ease-in 0.5s;
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: transparent;
+    position: absolute;
+    border-radius: 10px;
+    border: 2px solid blue;
+    top: -100%;
+    z-index: 1000;
+    left: 40%;
+}
+
+ul>li:nth-child(2)>a.active+span:after {
+    content: '';
+    height: 2px;
+    width: 300px;
+    position: absolute;
+    top: -16px;
+    transition: 0.5s all ease-in 0.5s;
+    z-index: 999;
+    left: -264px;
+    background-color: #315eff;
+}
+
+ul>li:nth-child(3)>a.active+span:after {
+    content: '';
+    transition: 0.5s all ease-in 0.5s;
+    height: 2px;
+    width: 574px;
+    position: absolute;
+    top: -16px;
+    z-index: 999;
+    left: -534px;
+    background-color: #315eff;
+}
+
+ul>li:nth-child(4)>a.active+span:after {
+    content: '';
+    transition: 0.5s all ease-in 0.5s;
+    height: 2px;
+    width: 844px;
+    position: absolute;
+    top: -16px;
+    z-index: 999;
+    left: -804px;
+    background-color: #315eff;
+}
+
+span {
+    transition: 0.5s all ease-in 0.5s;
+}
